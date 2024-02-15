@@ -1,0 +1,47 @@
+@import "../../assets/style/mixin.scss";
+.transaction{
+    background-color: #f7f7f7;
+    @include flex(column,center,center);
+    .container{
+        width: 30%;
+        padding-top: 25px;
+        .title{
+            width: 100%;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #8F8F8F;
+            @include flex(row,flex-start,flex-start);
+            h2{
+                margin: 0px;
+                line-height: normal;
+                font-size: 20px;
+            }
+        }
+        form{
+            width: 100%;
+            @include flex(column,center, $gap: 5px);
+            input,button{
+                height: 40px;
+                border-radius: 3px;
+                font-size: 20px;
+            }
+            label{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            input{
+                color: #7d7d7d;
+                padding: 0px 10px;
+                outline-color: #9c8cFC;
+                border: 1px solid #7d7d7d;
+
+            }
+            button{
+                background: #9c8cFC;
+                color: white;
+                border-color: #9c8cFC;;
+            }
+        }
+    }
+}
+

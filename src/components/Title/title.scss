@@ -1,0 +1,14 @@
+@import "../../assets/style/mixin.scss";
+.title{
+    background-color: #f7f7f7;
+    @include flex(column,center,center);
+    .container{
+        width: 30%;
+        text-align: center;
+        h1{
+            padding: 35px 0px;
+            font-size: 30px;
+        }
+    }
+}
+
